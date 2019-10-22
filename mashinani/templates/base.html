@@ -1,29 +1,45 @@
+{% load staticfiles %}
+{% load static%}
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta charset="utf-8">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
   {% if title %}
-  <title>Moringa Tribune - {{title}}</title>
+  <title>TECH-VIJIJINI - {{title}}</title>
   {% else %}
-    <title> Moringa Tribune </title>
+  <title>TECH-MASHINANI</title>
   {% endif %}
+  <!-- logo for my website -->
+  <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQn0MdUyhnzvHOZoa_e4jOoIPfOMqW97ae_96cFRqvoQjpUsYWJ" type="icon/image">
+
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
   <!-- Bootstrap core CSS -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
   <!-- Material Design Bootstrap -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.11/css/mdb.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/css/mdb.min.css" rel="stylesheet">
 </head>
+
+
 <body>
-    {% block content %}
-     {%endblock%}
-     <!-- JQuery -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<!-- Bootstrap tooltips -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
-<!-- Bootstrap core JavaScript -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
-<!-- MDB core JavaScript -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.11/js/mdb.min.js"></script>
+  {% include "navbar.html" %}
+ 
+  <!-- Footer -->
+  <script type="text/javascript" src="  https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
+  <script type="text/javascript" src="https://cdn.bootcss.com/typed.js/1.1.4/typed.min.js"></script>
+  <script>
+    var typed = new Typed('.moringa', {
+      strings: ["Welcome to the best online shop",
+        "Best And good products for you"
+      ],
+      typeSpeed: 120,
+      backSpeed: 120,
+      loop: true
+    });
+  </script>
 </body>
+
 </html>
