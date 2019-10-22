@@ -22,11 +22,29 @@
   <!-- Material Design Bootstrap -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/css/mdb.min.css" rel="stylesheet">
 </head>
-
-
+<ul class="nav justify-content-center navbar-dark orange py-4 fixed-top">
+        <li class="nav-item">
+          <a class="nav-link " href="#!"><h6>TECH-MASHINANI</h6></a>
+        </li>
+        <li class="nav-item">
+                <a class="nav-link " href="#!">About us</a>
+              </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#!">services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#!">projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#!">Team</a>
+        </li>
+        <li class="nav-item">
+                <a class="nav-link" href="#!">Contacts</a>
+              </li>
+      </ul>
 <body>
-  {% include "navbar.html" %}
- 
+ {% block content %}
+ {% endblock%}
   <!-- Footer -->
   <script type="text/javascript" src="  https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
   <script type="text/javascript" src="https://cdn.bootcss.com/typed.js/1.1.4/typed.min.js"></script>
