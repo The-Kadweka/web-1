@@ -1,18 +1,90 @@
-{% extends 'base.html' %}
 {% load staticfiles %}
+{% load static%}
 <!DOCTYPE html>
 <html>
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  {% if title %}
+  <title>TECH-VIJIJINI - {{title}}</title>
+  {% else %}
+  <title>TECH-MASHINANI</title>
+  {% endif %}
+  <!-- logo for my website -->
+  <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQn0MdUyhnzvHOZoa_e4jOoIPfOMqW97ae_96cFRqvoQjpUsYWJ" type="icon/image">
 
-  <title>New Article</title>
-  {% bootstrap_css %}
-  <link rel="stylesheet" href="{% static 'css/news.css' %}"> 
-  {% endblock %}
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.10/css/mdb.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../static/css/styles.css">
 </head>
 <body>
-<h1>be warned</h1>
+  <!--Navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark primary-color">
+
+    <!-- Navbar brand -->
+    <a class="navbar-brand" href="#">Navbar</a>
+  
+    <!-- Collapse button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
+      aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="basicExampleNav">
+  
+      <!-- Links -->
+      <ul class="navbar-nav mr-auto justify-content-center">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+  
+      </ul>
+      <!-- Links -->
+  
+      <form class="form-inline">
+        <div class="md-form my-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+        </div>
+      </form>
+    </div>
+    <!-- Collapsible content -->
+  
+  </nav>
+  <!--/.Navbar-->
+<div class="come">
+  <div class="more">
+      <h1><strong>TECH MASHINANI..</strong></h1>
+      <h5 class="moringa">jjjj</h5>
+
+  </div>
+</div>
+  <!-- Footer -->
+  <script type="text/javascript" src="  https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.js"></script>
+  <script type="text/javascript" src="https://cdn.bootcss.com/typed.js/1.1.4/typed.min.js"></script>
+  <script>
+    var typed = new Typed('.moringa', {
+      strings: ["Welcome to the best online shop",
+        "Best And good products for you"
+      ],
+      typeSpeed: 120,
+      backSpeed: 120,
+      loop: true
+    });
+  </script>
 </body>
+
 </html>
