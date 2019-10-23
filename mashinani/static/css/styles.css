@@ -1,0 +1,13 @@
+.come{
+    background-image: url('https://images.pexels.com/photos/450035/pexels-photo-450035.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 99vh;
+    background-color:black;
+    opacity: 0.56;
+    text-align: center;
+}
+.more{
+    padding-top: 15%;
+}
